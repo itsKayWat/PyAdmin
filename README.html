@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PyAdminContext - README</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #121212;
@@ -25,6 +26,44 @@
         }
         h1, h2, h3 {
             color: #bb86fc;
+        }
+        .support-section {
+            background-color: #1e1e1e;
+            border: 2px solid #bb86fc;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(187, 134, 252, 0.3);
+        }
+        .developer-signature {
+            text-align: center;
+        }
+        .coffee-options {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        .coffee-btn {
+            background: linear-gradient(145deg, #bb86fc, #9965d4);
+            color: #e0e0e0;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .coffee-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .dev-signature {
+            font-family: 'Dancing Script', cursive;
+            color: #bb86fc;
+            margin-top: 1.5rem;
+            opacity: 0.8;
+            font-size: 1.2rem;
         }
     </style>
 </head>
@@ -70,8 +109,19 @@ python add_admin_option.py
     <h2>Example Use Case</h2>
     <p><strong>Customer Situation</strong>: A developer needs to run a Python script that modifies system settings. Instead of manually opening an elevated Command Prompt each time, they simply right-click the script and select "Run as Administrator." This streamlines their workflow and reduces repetitive tasks.</p>
 
-    <h2>Support</h2>
-    <p>If you encounter any issues or have suggestions, feel free to open an <a href="https://github.com/yourusername/PyAdminContext/issues">issue</a> on GitHub.</p>
+    <div class="support-section">
+        <h2>Support the Developer</h2>
+        <div class="developer-signature">
+            <p>👋 Hi, I'm KayWat! I created this tool to help developers streamline their administrative workflows.</p>
+            <p>If you find this tool valuable, consider supporting my work:</p>
+            <div class="coffee-options">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=1coffee" class="coffee-btn">☕ One Coffee ($6)</a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=2coffees" class="coffee-btn">☕☕ Two Coffees ($12)</a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=3coffees" class="coffee-btn">☕☕☕ Three Coffees ($24)</a>
+            </div>
+            <p class="dev-signature">Made with ❤️ by KayWat</p>
+        </div>
+    </div>
 
     <h2>License</h2>
     <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
